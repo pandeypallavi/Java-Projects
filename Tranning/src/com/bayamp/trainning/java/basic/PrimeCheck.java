@@ -3,20 +3,20 @@ package com.bayamp.trainning.java.basic;
 public class PrimeCheck {
 
 	public static void main(String[] args) {
-		int n = 0;
-		int m = n / 2;
-		if (n == 1 || n == 0) {
-			System.out.println("this is not prime");
-		} else if (n == 2) {
-			System.out.println("This is prime");
-		}
 
-		else {
-			for (int i = 2; i <= m; i++) {
-
+		int num = 30;
+		boolean flag = false;
+		for (int i = 2; i <= num / 2; ++i) {
+			// condition for nonprime number
+			if (num % i == 0) {
+				flag = true;
+				break;
 			}
-			System.out.println("ok");
 		}
-	}
 
+		if (!flag)
+			System.out.println(num + " is a prime number.");
+		else
+			System.out.println(num + " is not a prime number.");
+	}
 }

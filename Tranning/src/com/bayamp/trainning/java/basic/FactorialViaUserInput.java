@@ -4,7 +4,7 @@ public class FactorialViaUserInput {
 
 	public static void main(String[] args) {
 
-		Utilities.factorialviainput();
+		com.bayamp.junebatch.Utils.Utilities.factorialviainput();
 
 	}
 }
